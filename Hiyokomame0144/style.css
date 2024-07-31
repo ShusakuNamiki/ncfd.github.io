@@ -6,7 +6,7 @@ body {
     background-color: #f0f0f0;
 }
 
-#gameCanvas {
+canvas {
     background-color: #fff;
-    border: 1px solid #000;
+    border: 1px solid #ccc;
 }
