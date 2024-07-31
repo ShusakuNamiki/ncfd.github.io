@@ -1,6 +1,6 @@
 document.addEventListener('click', function(event) {
   const newImage = document.createElement('img');
-  newImage.src = 'path/to/your/easter-egg-image.png'; // イースターエッグの画像パスを指定
+  newImage.src = 'easter-egg-image.png'; // イースターエッグの画像パスを指定
   newImage.classList.add('image');
   newImage.style.left = event.clientX - 25 + 'px'; 
   newImage.style.top = event.clientY - 25 + 'px';
