@@ -1,12 +1,33 @@
 body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #f0f0f0;
+    background-color: #d69e2e; /* ソ連の国旗をイメージした赤 */
+    color: #f0f0f0; /* 文字色を白に */
+    font-family: 'Helvetica Neue', Arial, sans-serif; /* フォントを変更 */
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px #000; /* 文字に影をつける */
 }
 
 canvas {
-    background-color: #fff;
-    border: 1px solid #ccc;
+    background-color: #264653; /* 暗めの青緑 */
+    border: 2px solid #f0f0f0; /* 白の枠線 */
+}
+
+button {
+    background-color: #2a9d8f; /* 緑 */
+    color: #f0f0f0;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px #000; /* ボタンに影をつける */
 }
