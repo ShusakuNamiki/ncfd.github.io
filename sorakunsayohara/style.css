@@ -1,11 +1,15 @@
-body {
-  background-color: #f0f0f0; /* 背景色 */
-}
+document.addEventListener('click', function(event) {
+  const newImage = document.createElement('img');
+  newImage.src = 'path/to/your/easter-egg-image.png'; // イースターエッグの画像パスを指定
+  newImage.classList.add('image');
+  newImage.style.left = event.clientX - 25 + 'px'; 
+  newImage.style.top = event.clientY - 25 + 'px';
+  document.body.appendChild(newImage);
 
-.image {
-  position: absolute;
-  width: 50px; /* 画像のサイズ */
-  height: auto;
-  cursor: pointer;
-  transition: opacity 1s ease-out; /* フェードアウト効果 */
-}
+  setTimeout(() => {
+    newImage.style.opacity = 0; 
+    setTimeout(() => {
+      newImage.remove(); 
+    }, 1000); 
+  }, 3000); 
+});
