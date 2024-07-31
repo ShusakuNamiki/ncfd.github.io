@@ -1,55 +1,17 @@
-// キャンバスの設定
-const canvas = document.getElementById("gameCanvas");
-const ctx = canvas.getContext("2d");
-const canvasWidth = 600;
-const canvasHeight = 400;
-canvas.width = canvasWidth;
-canvas.height = canvasHeight;
+// ... (他のコードは基本的に同じ)
 
-// ボール
-const ballRadius = 10;
-let ballX = canvasWidth / 2;
-let ballY = canvasHeight - 30;
-let dx = 2;
-let dy = -2;
-const ballImage = new Image();
-ballImage.src = "ball.png"; // ボール画像のパス
+// ゲーム開始時のメッセージ
+alert("イースターエッグを探せ！🥚\n卵を食べるとスコアがアップ！")
 
-ballImage.onerror = function() {
-    console.error("ボール画像の読み込みに失敗しました。");
-    // 代替画像を表示する場合はここにコードを追加
-};
+// ... (ゲームのロジック)
 
-// パドル
-const paddleHeight = 10;
-const paddleWidth = 75;
-let paddleX = (canvasWidth - paddleWidth) / 2;
-let rightPressed = false;
-let leftPressed = false;
-
-// ブロック
-const brickRowCount = 3;
-const brickColumnCount = 5;
-const brickWidth = 75;
-const brickHeight = 20;
-const brickPadding = 10;
-const brickOffsetTop = 30;
-const brickOffsetLeft = 30;
-const bricks = [];
-for (let c = 0; c < brickColumnCount; c++) {
-    bricks[c] = [];
-    for (let r = 0; r < brickRowCount; r++) {
-        bricks[c][r] = { x: 0, y: 0, status: 1 };
-    }
+// 餌を描画する関数
+function drawFood() {
+    ctx.beginPath();
+    ctx.arc(foodX * 10 + 5, foodY * 10 + 5, 4, 0, 2 * Math.PI); // 卵の形に調整
+    ctx.fillStyle = "yellow"; // 卵の色
+    ctx.fill();
+    ctx.closePath();
 }
 
-// スコア
-let score = 0;
-
-// イベントリスナー
-document.addEventListener("keydown", keyDownHandler, false);
-document.addEventListener("keyup", keyUpHandler, false);
-
-function keyDownHandler(e) {
-    if (e.key == "Right" || e.key == "ArrowRight" || e.key == "d") {
-        rightPressed = true
+// ... (ゲームループ、描画関数など)
