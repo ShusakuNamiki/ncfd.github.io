@@ -1,33 +1,16 @@
 body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: #d69e2e; /* ソ連の国旗をイメージした赤 */
-    color: #f0f0f0; /* 文字色を白に */
-    font-family: 'Helvetica Neue', Arial, sans-serif; /* フォントを変更 */
-}
-
-h1 {
-    font-size: 3em;
-    margin-bottom: 20px;
-    text-shadow: 2px 2px 4px #000; /* 文字に影をつける */
+    background-color: #d6d6d6; /* 背景色：グレー */
+    font-family: 'Courier New', monospace; /* フォント：等幅フォント */
+    color: #333; /* 文字色：ダークグレー */
+    text-align: center;
 }
 
 canvas {
-    background-color: #264653; /* 暗めの青緑 */
-    border: 2px solid #f0f0f0; /* 白の枠線 */
+    background-color: #000; /* ゲーム画面：黒 */
+    border: 2px solid #fff; /* 白枠 */
 }
 
-button {
-    background-color: #2a9d8f; /* 緑 */
-    color: #f0f0f0;
-    border: none;
-    padding: 10px 20px;
-    margin-top: 20px;
-    cursor: pointer;
-    font-size: 1em;
-    border-radius: 5px;
-    box-shadow: 2px 2px 4px #000; /* ボタンに影をつける */
+h1 {
+    color: #ff0000; /* タイトル：赤 */
+    text-shadow: 2px 2px 5px #000; /* 影 */
 }
