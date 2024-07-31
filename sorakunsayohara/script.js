@@ -1,6 +1,6 @@
 document.addEventListener('click', function(event) {
   const newImage = document.createElement('img');
-  newImage.src = 'C:\Users\namik\OneDrive\デスクトップ\新しいフォルダー\sorakunsayohara.jpg'; // イースターエッグの画像パスを指定
+  newImage.src = 'ncfd.github.io/sorakunsayohara/sorakunsayohara.png'; // イースターエッグの画像パスを指定
   newImage.classList.add('image');
   newImage.style.left = event.clientX - 25 + 'px'; 
   newImage.style.top = event.clientY - 25 + 'px';
