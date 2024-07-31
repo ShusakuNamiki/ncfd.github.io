@@ -1,0 +1,14 @@
+body {
+  background-color: #FF6900; /* Xiaomi オレンジ */
+  color: white;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#easter-egg {
+  cursor: pointer;
+  font-size: 3em;
+}
