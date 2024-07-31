@@ -1,0 +1,15 @@
+document.addEventListener('click', function(event) {
+  const newImage = document.createElement('img');
+  newImage.src = 'C:\Users\namik\OneDrive\デスクトップ\新しいフォルダー\sorakunsayohara.jpg'; // イースターエッグの画像パスを指定
+  newImage.classList.add('image');
+  newImage.style.left = event.clientX - 25 + 'px'; 
+  newImage.style.top = event.clientY - 25 + 'px';
+  document.body.appendChild(newImage);
+
+  setTimeout(() => {
+    newImage.style.opacity = 0; 
+    setTimeout(() => {
+      newImage.remove(); 
+    }, 1000); 
+  }, 3000); 
+});
