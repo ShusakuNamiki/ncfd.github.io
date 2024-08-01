@@ -1,16 +1,8 @@
-body {
-    background-color: #d6d6d6; /* 背景色：グレー */
-    font-family: 'Courier New', monospace; /* フォント：等幅フォント */
-    color: #333; /* 文字色：ダークグレー */
-    text-align: center;
+#image-container {
+  /* 画像を中央に配置 */
 }
 
-canvas {
-    background-color: #000; /* ゲーム画面：黒 */
-    border: 2px solid #fff; /* 白枠 */
-}
-
-h1 {
-    color: #ff0000; /* タイトル：赤 */
-    text-shadow: 2px 2px 5px #000; /* 影 */
+#image-container img {
+  /* 初期状態は非表示 */
+  opacity: 0;
 }
