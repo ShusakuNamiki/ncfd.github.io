@@ -1,8 +1,12 @@
-#image-container {
-  /* 画像を中央に配置 */
+.waterfall-image {
+  position: absolute;
+  top: -200px; /* 画像の初期位置を調整 */
+  left: 50%;
+  transform: translateX(-50%); /* 中央揃え */
+  animation: waterfall 2s linear infinite; /* アニメーションの設定 */
 }
 
-#image-container img {
-  /* 初期状態は非表示 */
-  opacity: 0;
+@keyframes waterfall {
+  0% { top: -200px; opacity: 0; } /* 開始時の状態 */
+  100% { top: 100%; opacity: 1; } /* 終了時の状態 */
 }
