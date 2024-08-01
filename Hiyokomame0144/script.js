@@ -1,6 +1,8 @@
-gsap.to("#image-container img", {
-  duration: 1,  // アニメーション時間
-  opacity: 1,   // 表示
-  yPercent: 100, // 下に移動
-  ease: "power2.out" // イージング
+$(document).ready(function() {
+  $('.waterfall-image').animate({
+    top: '100%',
+    opacity: 1
+  }, 2000, 'linear', function() {
+    // アニメーション終了後の処理 (必要であれば)
+  });
 });
