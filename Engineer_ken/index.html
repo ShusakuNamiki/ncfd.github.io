@@ -2,29 +2,13 @@
 <html>
 <head>
   <title>Easter Egg</title>
-  <style>
-    body {
-      background-color: yellow;
-    }
-    #easter-egg {
-      cursor: pointer;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <span id="easter-egg">Easter Egg</span>
-
   <audio id="audio-player">
     <source src="your_audio_file.mp3" type="audio/mpeg">
   </audio>
-
-  <script>
-    const easterEgg = document.getElementById('easter-egg');
-    const audioPlayer = document.getElementById('audio-player');
-
-    easterEgg.addEventListener('click', () => {
-      audioPlayer.play(); 
-    });
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
